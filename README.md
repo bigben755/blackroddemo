@@ -23,6 +23,8 @@ This repository exists so Community Alliance members can explore what a local co
 - Venue directory
 - Volunteering directory
 - Notifications
+- **Organisation dashboard** showing how a local group can edit its profile, publish events and post community updates
+- **Site admin preview** with Control, Content, Organisations, Messages, Claims and Accuracy views
 - **Sandbox Studio** for creating, editing and deleting fictional organisations, events, venues, volunteer roles and feed posts
 - Reset controls so the demo can always return to its starter state
 
