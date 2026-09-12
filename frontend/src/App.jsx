@@ -12,6 +12,7 @@ import Venues from "./pages/Venues";
 import Volunteering from "./pages/Volunteering";
 import { Notifications, SavedEvents } from "./pages/SavedAndNotifications";
 import SandboxStudio from "./pages/SandboxStudio";
+import { OrganisationDashboard, SiteAdminDemo } from "./pages/ManagementDemo";
 
 export default function App() {
   const [status, setStatus] = React.useState({ loading: true, authenticated: false, configured: true });
@@ -68,6 +69,8 @@ function DemoApplication({ onLogout }) {
         <Route path="/volunteering" element={<Volunteering />} />
         <Route path="/saved" element={<SavedEvents />} />
         <Route path="/notifications" element={<Notifications />} />
+        <Route path="/organisation-dashboard" element={<OrganisationDashboard />} />
+        <Route path="/site-admin" element={<SiteAdminDemo />} />
         <Route path="/sandbox" element={<SandboxStudio />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
