@@ -1,0 +1,83 @@
+.management-page { padding-bottom: 88px; }
+.management-heading { display: flex; align-items: flex-start; gap: 16px; max-width: 850px; }
+.management-heading-icon { width: 48px; height: 48px; border-radius: 16px; display: grid; place-items: center; flex: 0 0 auto; background: #eaf0ff; color: var(--primary); border: 1px solid #cbd8ff; }
+.management-heading h1 { font-size: clamp(38px, 5vw, 58px); letter-spacing: -.035em; }
+.management-heading p { color: var(--muted); margin: 10px 0 0; max-width: 780px; }
+.management-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-top: 30px; padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; }
+.management-select-wrap { display: grid; gap: 7px; min-width: min(420px, 100%); }
+.management-select-wrap span, .management-field > span, .management-inline-form label > span { font-size: 11px; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: .08em; }
+.management-select-wrap select, .management-field input, .management-field textarea, .management-field select, .management-inline-form input, .management-inline-form select { width: 100%; border: 1px solid var(--border); border-radius: 12px; background: #fff; color: var(--text); padding: 11px 12px; outline: none; }
+.management-select-wrap select:focus, .management-field input:focus, .management-field textarea:focus, .management-field select:focus, .management-inline-form input:focus, .management-inline-form select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,82,255,.09); }
+.demo-mode-note { display: inline-flex; align-items: center; gap: 8px; color: #475569; font-size: 12px; font-weight: 700; }
+.management-toast { position: sticky; top: 118px; z-index: 35; margin: 22px 0 -4px; display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 999px; background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; font-size: 12px; font-weight: 800; box-shadow: var(--shadow); }
+.management-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+.management-metric { min-height: 132px; padding: 20px; border-radius: 22px; background: var(--surface); border: 1px solid var(--border); display: flex; flex-direction: column; gap: 7px; }
+.management-metric svg { color: var(--primary); }
+.management-metric strong { font-family: 'Outfit', sans-serif; font-size: 28px; line-height: 1; margin-top: auto; }
+.management-metric span { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; }
+.management-grid { display: grid; gap: 18px; margin-top: 20px; }
+.management-grid.two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.management-card { background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 24px; box-shadow: 0 10px 30px rgba(15,23,42,.035); }
+.management-wide-card { margin-top: 20px; }
+.management-card-title { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 18px; }
+.management-card-title > span { width: 38px; height: 38px; border-radius: 12px; background: #eef2ff; color: var(--primary); display: grid; place-items: center; flex: 0 0 auto; }
+.management-card-title h2, .panel-heading h2 { font-size: 20px; }
+.management-card-title p, .panel-heading p { color: var(--muted); font-size: 13px; margin: 5px 0 0; }
+.management-form { display: grid; gap: 13px; }
+.management-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.management-field { display: grid; gap: 6px; }
+.management-field textarea { resize: vertical; min-height: 92px; }
+.management-list { margin-top: 18px; border-top: 1px solid var(--border); }
+.compact-list > div { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+.compact-list span { color: var(--muted); white-space: nowrap; }
+.management-inline-form { display: grid; grid-template-columns: 1.3fr 1fr 1fr auto; gap: 12px; align-items: end; }
+.management-inline-form label { display: grid; gap: 7px; }
+.management-table-wrap { overflow-x: auto; margin-top: 20px; border: 1px solid var(--border); border-radius: 16px; }
+.management-table { width: 100%; border-collapse: collapse; min-width: 680px; background: #fff; }
+.management-table th { background: #f8fafc; color: #64748b; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; text-align: left; padding: 12px 14px; }
+.management-table td { padding: 13px 14px; border-top: 1px solid var(--border); font-size: 12px; vertical-align: middle; }
+.management-status { display: inline-flex; align-items: center; padding: 5px 8px; border-radius: 999px; background: #f1f5f9; color: #475569; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
+.management-status.good { background: #dcfce7; color: #166534; }
+.management-status.warn { background: #fef3c7; color: #92400e; }
+.table-action { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--border); border-radius: 999px; background: #fff; padding: 7px 10px; font-size: 11px; font-weight: 800; color: #334155; }
+.table-action:hover { background: #f8fafc; }
+.admin-tabbar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; padding-bottom: 4px; }
+.admin-tabbar button { border: 1px solid var(--border); background: #fff; color: #475569; border-radius: 999px; padding: 9px 14px; font-size: 11px; font-weight: 800; text-transform: capitalize; }
+.admin-tabbar button.active { background: #0f172a; border-color: #0f172a; color: #fff; }
+.panel-heading { margin-bottom: 18px; max-width: 800px; }
+.attention-row { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 13px 0; border: 0; border-bottom: 1px solid var(--border); background: transparent; text-align: left; }
+.attention-row span { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: #334155; }
+.attention-row strong { font-family: 'Outfit', sans-serif; font-size: 20px; }
+.feature-list { display: grid; gap: 10px; margin: 0 0 20px; padding-left: 20px; color: #475569; font-size: 13px; }
+.message-list { display: grid; gap: 8px; }
+.message-list button { width: 100%; border: 1px solid var(--border); border-radius: 14px; padding: 12px; background: #fff; text-align: left; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.message-list button.unread { border-color: #93c5fd; background: #eff6ff; }
+.message-list strong, .message-list small { display: block; }
+.message-list strong { font-size: 12px; }
+.message-list small { color: var(--muted); margin-top: 4px; }
+.message-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); flex: 0 0 auto; }
+.claim-grid { display: grid; gap: 12px; }
+.claim-card { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; border: 1px solid var(--border); border-radius: 18px; padding: 16px; }
+.claim-card p { margin: 5px 0 0; color: var(--muted); font-size: 11px; }
+.claim-icon { width: 40px; height: 40px; border-radius: 12px; background: #fff7ed; color: #c2410c; display: grid; place-items: center; }
+.empty-management { display: flex; align-items: center; gap: 10px; background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; border-radius: 16px; padding: 16px; font-size: 12px; font-weight: 700; }
+
+@media (max-width: 900px) {
+  .management-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .management-grid.two-col { grid-template-columns: 1fr; }
+  .management-inline-form { grid-template-columns: 1fr 1fr; }
+  .management-toolbar { align-items: stretch; flex-direction: column; }
+  .management-select-wrap { min-width: 0; }
+}
+
+@media (max-width: 620px) {
+  .management-heading { display: block; }
+  .management-heading-icon { margin-bottom: 14px; }
+  .management-metrics { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .management-metric { min-height: 112px; padding: 15px; }
+  .management-form-grid, .management-inline-form { grid-template-columns: 1fr; }
+  .claim-card { grid-template-columns: auto 1fr; }
+  .claim-card .button { grid-column: 1 / -1; }
+  .admin-tabbar { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 8px; }
+  .admin-tabbar button { flex: 0 0 auto; }
+}
