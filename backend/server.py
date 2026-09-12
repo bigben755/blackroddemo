@@ -43,11 +43,13 @@ def _session_secret() -> str:
 
 def _session_token() -> str:
     secret = _session_secret()
-    if not secret:
+    password = _configured_password()
+    if not secret or not password:
         return ""
+    message = f"community-alliance-demo-access|{password}".encode("utf-8")
     return hmac.new(
         secret.encode("utf-8"),
-        b"community-alliance-demo-access",
+        message,
         hashlib.sha256,
     ).hexdigest()
 
