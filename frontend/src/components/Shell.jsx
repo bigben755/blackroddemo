@@ -12,6 +12,8 @@ import {
   Menu,
   Newspaper,
   RotateCcw,
+  ShieldCheck,
+  UserCog,
   X,
 } from "lucide-react";
 import { useDemo } from "../DemoContext";
@@ -23,7 +25,9 @@ const NAV = [
   { to: "/feed", label: "Local feed", icon: Newspaper },
   { to: "/venues", label: "Venues", icon: MapPin },
   { to: "/volunteering", label: "Volunteering", icon: Heart },
-  { to: "/sandbox", label: "Sandbox Studio", icon: LayoutDashboard },
+  { to: "/organisation-dashboard", label: "Org dashboard", icon: UserCog },
+  { to: "/site-admin", label: "Site admin", icon: ShieldCheck },
+  { to: "/sandbox", label: "Studio", icon: LayoutDashboard },
 ];
 
 export default function Shell({ onLogout }) {
